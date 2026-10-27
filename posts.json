@@ -1,0 +1,25 @@
+{
+  "posts": {
+    "2026-10-28": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "ClaudeError: Claude API呼び出し失敗 (HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"To turn thinking off on this model, send \\\"thinking\\\": {\\\"type\\\": \\\"between_tools\\\"} instead of {\\\"type\\\""
+        },
+        {
+          "attempt": 2,
+          "error": "ClaudeError: Claude API呼び出し失敗 (HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"To turn thinking off on this model, send \\\"thinking\\\": {\\\"type\\\": \\\"between_tools\\\"} instead of {\\\"type\\\""
+        },
+        {
+          "attempt": 3,
+          "error": "ClaudeError: Claude API呼び出し失敗 (HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"To turn thinking off on this model, send \\\"thinking\\\": {\\\"type\\\": \\\"between_tools\\\"} instead of {\\\"type\\\""
+        }
+      ],
+      "audience": "seeker",
+      "created_at": "2026-10-28T02:38:55.299526+09:00",
+      "date": "2026-10-28",
+      "status": "failed",
+      "theme": "mindset"
+    }
+  }
+}
