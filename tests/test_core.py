@@ -279,3 +279,22 @@ def test_ig_insights_parse():
 
     ig = IGClient("T", "1784", transport=transport)
     assert ig.media_insights("m1", ["reach", "saved"]) == {"reach": 321, "saved": 7}
+
+
+def test_claude_thinking_off_fallback():
+    from ig_bot.claude_client import ClaudeClient
+    sent = []
+    msg = json.dumps({"type": "error", "error": {"type": "invalid_request_error",
+                      "message": 'To turn thinking off on this model, send "thinking": {"type": "between_tools"}'}}).encode()
+
+    def transport(req, timeout):
+        body = json.loads(req.data)
+        sent.append(body["thinking"]["type"])
+        if body["thinking"]["type"] == "disabled":
+            raise urllib.error.HTTPError(req.full_url, 400, "x", {}, io.BytesIO(msg))
+        return {"content": [{"type": "text", "text": "ok"}], "usage": {}}
+
+    c = ClaudeClient("k", transport=transport, sleep=lambda s: None)
+    assert c.complete("claude-sonnet-5-5", "p", 10) == "ok"
+    assert c.complete("claude-sonnet-5-5", "p", 10) == "ok"
+    assert sent == ["disabled", "between_tools", "between_tools"]  # 2回目からは最初から正しい形式

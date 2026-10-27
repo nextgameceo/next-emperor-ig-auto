@@ -35,6 +35,7 @@ class ClaudeClient:
         self.timeout = timeout
         self._sleep = sleep
         self.usage = {"input_tokens": 0, "output_tokens": 0, "calls": 0}
+        self._thinking_off: dict[str, str] = {}
 
     def complete(self, model: str, prompt: str, max_tokens: int, system: str | None = None,
                  effort: str = "low", disable_thinking: bool = True) -> str:
@@ -48,7 +49,19 @@ class ClaudeClient:
             payload["system"] = system
         if disable_thinking:
             # 投稿文生成など短い出力では思考トークンを使わず費用を抑える
-            payload["thinking"] = {"type": "disabled"}
+            # （モデルによって「思考オフ」の指定方法が違うため、拒否されたら指示どおりの形式で送り直す）
+            payload["thinking"] = {"type": self._thinking_off.get(model, "disabled")}
+        try:
+            return self._send(payload)
+        except ClaudeError as e:
+            alt = "between_tools"
+            if disable_thinking and alt in str(e) and payload["thinking"]["type"] != alt:
+                self._thinking_off[model] = alt
+                payload["thinking"] = {"type": alt}
+                return self._send(payload)
+            raise
+
+    def _send(self, payload: dict) -> str:
         req = urllib.request.Request(
             API_URL,
             data=json.dumps(payload).encode("utf-8"),
