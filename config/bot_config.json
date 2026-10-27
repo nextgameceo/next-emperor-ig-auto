@@ -23,8 +23,24 @@
       "label": "求職者向け",
       "badge": "FOR YOU",
       "cta_title": "求人は公式サイトで公開中",
-      "cta_lines": ["プロフィールのリンクから", "求人の詳細を確認できます"],
-      "hashtags": ["#夜職から昼職", "#昼職", "#転職", "#転職活動", "#未経験転職", "#キャリアチェンジ", "#夜職", "#キャバ嬢", "#ホスト", "#20代転職", "#営業職", "#キャリア"],
+      "cta_lines": [
+        "プロフィールのリンクから",
+        "求人の詳細を確認できます"
+      ],
+      "hashtags": [
+        "#夜職から昼職",
+        "#昼職",
+        "#転職",
+        "#転職活動",
+        "#未経験転職",
+        "#キャリアチェンジ",
+        "#夜職",
+        "#キャバ嬢",
+        "#ホスト",
+        "#20代転職",
+        "#営業職",
+        "#キャリア"
+      ],
       "themes": {
         "strengths": "夜職で身につく強み（接客・傾聴・状況判断など）の言語化",
         "job_types": "接客経験を活かしやすい職種の紹介",
@@ -42,8 +58,21 @@
       "label": "企業向け",
       "badge": "FOR BUSINESS",
       "cta_title": "採用・営業のご相談は",
-      "cta_lines": ["プロフィールのリンクから", "公式サイトのお問い合わせへ"],
-      "hashtags": ["#人材採用", "#採用担当", "#採用マーケティング", "#中途採用", "#営業代行", "#人材確保", "#採用課題", "#採用ブランディング", "#経営者"],
+      "cta_lines": [
+        "プロフィールのリンクから",
+        "公式サイトのお問い合わせへ"
+      ],
+      "hashtags": [
+        "#人材採用",
+        "#採用担当",
+        "#採用マーケティング",
+        "#中途採用",
+        "#営業代行",
+        "#人材確保",
+        "#採用課題",
+        "#採用ブランディング",
+        "#経営者"
+      ],
       "themes": {
         "potential": "職歴の肩書きでなく対人スキルで人材を見る視点",
         "onboarding": "異業種出身者を受け入れるときの育成・定着の工夫",
@@ -56,15 +85,26 @@
     }
   },
   "schedule": {
-    "_comment": "投稿は月・木の21:00 JST（ワークフローのcronと対応）。この時間帯外のスケジュール起動では投稿しない",
-    "post_weekdays": [0, 3],
+    "_comment": "投稿は毎日21:00 JST（ワークフローのcronと対応）。この時間帯外のスケジュール起動では投稿しない",
+    "post_weekdays": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
     "earliest_post_hour_jst": 20,
     "latest_post_hour_jst": 23
   },
   "post": {
-    "audience_ratio": {"seeker": 2, "company": 1},
-    "audience_balance_window": 9,
-    "recent_theme_window": 4,
+    "audience_ratio": {
+      "seeker": 2,
+      "company": 1
+    },
+    "audience_balance_window": 12,
+    "recent_theme_window": 6,
     "content_slides_min": 4,
     "content_slides_max": 5,
     "max_title_chars": 22,
@@ -95,7 +135,15 @@
   },
   "collect": {
     "lookback_days": 30,
-    "metrics": ["reach", "likes", "comments", "saved", "shares", "total_interactions", "views"]
+    "metrics": [
+      "reach",
+      "likes",
+      "comments",
+      "saved",
+      "shares",
+      "total_interactions",
+      "views"
+    ]
   },
   "analysis": {
     "lookback_days": 56,

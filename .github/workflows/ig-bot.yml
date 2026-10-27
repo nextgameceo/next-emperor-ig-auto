@@ -2,9 +2,9 @@ name: NEXT EMPEROR Instagram Bot (カルーセル投稿・収集・分析)
 
 # 本番投稿の条件（すべて満たす場合のみ）:
 #   1. リポジトリ変数 または Secret の IG_BOT_MODE が 'live'
-#   2. スケジュール起動（月・木 21:00 JST）、または手動実行で allow_live_post にチェック
+#   2. スケジュール起動（毎日 21:00 JST）、または手動実行で allow_live_post にチェック
 #   ※ 例外: ops/post-now.txt を更新して main に push した場合は、IG_BOT_MODE に関係なく即時に本番投稿する
-#   3. スケジュール起動のときは 月・木の JST 20:00〜23:59 の間、かつ本日まだ投稿していない
+#   3. スケジュール起動のときは JST 20:00〜23:59 の間、かつ本日まだ投稿していない
 # それ以外は dry_run: 文章と画像を作って ig-data ブランチに保存するだけで、Instagramには投稿しない。
 
 on:
@@ -12,8 +12,8 @@ on:
     branches: [main]
     paths: ['ops/post-now.txt']   # このファイルを更新すると即時に本番投稿（本日まだ投稿していない場合のみ）
   schedule:
-    - cron: '0 12 * * 1,4'   # 月・木 21:00 JST 投稿
-    - cron: '40 12 * * 1,4'  # 月・木 21:40 JST 予備（遅延・取りこぼし対策。投稿済みなら何もしない）
+    - cron: '0 12 * * *'    # 毎日 21:00 JST 投稿
+    - cron: '40 12 * * *'   # 毎日 21:40 JST 予備（遅延・取りこぼし対策。投稿済みなら何もしない）
     - cron: '30 18 * * *'    # 毎日 03:30 JST 反応（インサイト）収集
     - cron: '30 0 * * 1'     # 月曜 09:30 JST 週次分析・トークン期限チェック
   workflow_dispatch:
@@ -64,7 +64,7 @@ jobs:
             if [ "$TASK" = "post" ] && [ "$FORCE_DRAFT" = "true" ]; then FLAGS="--force"; fi
           else
             case "$SCHEDULE" in
-              "0 12 * * 1,4"|"40 12 * * 1,4") TASK=post; FLAGS="--scheduled" ;;
+              "0 12 * * *"|"40 12 * * *") TASK=post; FLAGS="--scheduled" ;;
               "30 18 * * *") TASK=collect ;;
               "30 0 * * 1") TASK=analyze ;;
               *) echo "::error::未知のスケジュール: $SCHEDULE"; exit 1 ;;

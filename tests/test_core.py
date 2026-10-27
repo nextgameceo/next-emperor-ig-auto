@@ -132,7 +132,7 @@ def test_prepare_scheduled_window():
     ok, _ = in_post_window(THU_21, CFG)
     assert ok
     ok, why = in_post_window(WED_02, CFG)
-    assert not ok and "投稿日" in why
+    assert not ok and "時間帯外" in why  # 毎日投稿なので曜日では止まらない
 
 
 def test_prepare_failed_records(tmp_path):
