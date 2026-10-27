@@ -1,0 +1,135 @@
+name: NEXT EMPEROR Instagram Bot (カルーセル投稿・収集・分析)
+
+# 本番投稿の条件（すべて満たす場合のみ）:
+#   1. リポジトリ変数 IG_BOT_MODE が 'live'
+#   2. スケジュール起動（月・木 21:00 JST）、または手動実行で allow_live_post にチェック
+#   3. スケジュール起動のときは 月・木の JST 20:00〜23:59 の間、かつ本日まだ投稿していない
+# それ以外は dry_run: 文章と画像を作って ig-data ブランチに保存するだけで、Instagramには投稿しない。
+
+on:
+  schedule:
+    - cron: '0 12 * * 1,4'   # 月・木 21:00 JST 投稿
+    - cron: '40 12 * * 1,4'  # 月・木 21:40 JST 予備（遅延・取りこぼし対策。投稿済みなら何もしない）
+    - cron: '30 18 * * *'    # 毎日 03:30 JST 反応（インサイト）収集
+    - cron: '30 0 * * 1'     # 月曜 09:30 JST 週次分析・トークン期限チェック
+  workflow_dispatch:
+    inputs:
+      task:
+        description: '実行する処理'
+        required: true
+        default: post
+        type: choice
+        options: [post, collect, analyze]
+      allow_live_post:
+        description: 'post のみ: IG_BOT_MODE=live のとき実際にInstagramへ投稿する（未チェックなら下書きのみ）'
+        required: false
+        default: false
+        type: boolean
+      force_new_draft:
+        description: 'post のみ: 本日の下書きがあっても作り直す'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write  # 状態保存ブランチ ig-data への書き込みのみに使用
+
+concurrency:
+  group: next-emperor-ig-bot  # 全ジョブを直列化（状態ファイルの競合・二重投稿を防止）
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Determine task
+        id: task
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          INPUT_TASK: ${{ inputs.task }}
+          FORCE_DRAFT: ${{ inputs.force_new_draft }}
+        run: |
+          set -euo pipefail
+          FLAGS=""
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            TASK="$INPUT_TASK"
+            if [ "$TASK" = "post" ] && [ "$FORCE_DRAFT" = "true" ]; then FLAGS="--force"; fi
+          else
+            case "$SCHEDULE" in
+              "0 12 * * 1,4"|"40 12 * * 1,4") TASK=post; FLAGS="--scheduled" ;;
+              "30 18 * * *") TASK=collect ;;
+              "30 0 * * 1") TASK=analyze ;;
+              *) echo "::error::未知のスケジュール: $SCHEDULE"; exit 1 ;;
+            esac
+          fi
+          echo "task=$TASK" >> "$GITHUB_OUTPUT"
+          echo "flags=$FLAGS" >> "$GITHUB_OUTPUT"
+          echo "実行タスク: $TASK $FLAGS"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Japanese fonts
+        if: steps.task.outputs.task == 'post'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra >/dev/null
+
+      - name: Checkout state branch (ig-data)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          bash scripts/state_checkout.sh state ig-data
+
+      # ---------------- post: 生成・画像化 → 保存（画像をGitHubに公開）→ Instagramへ投稿 ----------------
+      - name: Prepare post (generate + render)
+        id: prepare
+        if: steps.task.outputs.task == 'post'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m ig_bot prepare --state state ${{ steps.task.outputs.flags }}
+
+      - name: Save draft and images
+        id: save_draft
+        if: steps.task.outputs.task == 'post'
+        run: |
+          bash scripts/state_save.sh state "ig-data: prepare $(date -u +%Y-%m-%dT%H:%M:%SZ)" ig-data
+          echo "sha=$(git -C state rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Publish to Instagram
+        if: steps.task.outputs.task == 'post'
+        env:
+          IG_BOT_MODE: ${{ (vars.IG_BOT_MODE == 'live' && (github.event_name == 'schedule' || inputs.allow_live_post == true)) && 'live' || 'dry_run' }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          FLAGS=""
+          if [ "${{ github.event_name }}" = "schedule" ]; then FLAGS="--scheduled"; fi
+          python -m ig_bot publish --state state --sha "${{ steps.save_draft.outputs.sha }}" $FLAGS
+
+      # ---------------- collect / analyze ----------------
+      - name: Run ${{ steps.task.outputs.task }}
+        if: steps.task.outputs.task != 'post'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python -m ig_bot ${{ steps.task.outputs.task }} --state state
+
+      - name: Save state
+        if: always()  # 投稿直後に後続処理が失敗しても、投稿記録の保存を試みる
+        env:
+          TASK: ${{ steps.task.outputs.task }}
+        run: |
+          bash scripts/state_save.sh state "ig-data: ${TASK} $(date -u +%Y-%m-%dT%H:%M:%SZ)" ig-data

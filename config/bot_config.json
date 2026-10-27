@@ -1,0 +1,141 @@
+{
+  "_comment": "NEXT EMPEROR Instagram自動運用の設定。brand.facts には公式サイトで確認できる事実だけを書くこと（AIはこれ以外の事実を書かない）。",
+  "brand": {
+    "name": "NEXT EMPEROR",
+    "tagline": "夜の経験を、明日の可能性へ。",
+    "site": "https://next-emperor.com/",
+    "instagram_user_id": "17841468360923129",
+    "github_repo": "nextgameceo/next-emperor-ig-auto",
+    "facts": [
+      "夜職から昼職への転職を考える人に、提携企業の求人情報と応募機会を公式サイトで掲載している",
+      "求人の詳細ページでは仕事内容・給与・勤務時間・休日・福利厚生を確認できる",
+      "応募は各求人の応募窓口から本人が直接行い、NEXT EMPERORを経由した個人情報の提出は不要",
+      "面接・採用判断・雇用契約は掲載企業が行う",
+      "転職を強制しない",
+      "企業向けに、求人掲載・SNSや広告を使った求人発信・応募導線の設計などの採用マーケティング支援を行う",
+      "企業向けに、営業代行・販路開拓・営業戦略の立案などの法人営業支援を行う",
+      "企業からの相談は公式サイトのお問い合わせフォームで受け付けている",
+      "公式サイトへはInstagramのプロフィールのリンクから行ける"
+    ]
+  },
+  "audiences": {
+    "seeker": {
+      "label": "求職者向け",
+      "badge": "FOR YOU",
+      "cta_title": "求人は公式サイトで公開中",
+      "cta_lines": ["プロフィールのリンクから", "求人の詳細を確認できます"],
+      "hashtags": ["#夜職から昼職", "#昼職", "#転職", "#転職活動", "#未経験転職", "#キャリアチェンジ", "#夜職", "#キャバ嬢", "#ホスト", "#20代転職", "#営業職", "#キャリア"],
+      "themes": {
+        "strengths": "夜職で身につく強み（接客・傾聴・状況判断など）の言語化",
+        "job_types": "接客経験を活かしやすい職種の紹介",
+        "life_rhythm": "昼職に移るときの生活リズムの整え方",
+        "job_check": "求人を見るときに確認したい項目（勤務時間・休日・福利厚生など）",
+        "interview_prep": "面接で経歴をどう伝えるか",
+        "first_step": "転職を急がず情報収集から始める考え方",
+        "self_analysis": "自分の得意なことの棚卸しの方法",
+        "how_to_apply": "公式サイトでの求人の見方と応募方法",
+        "money_plan": "収入の変化に備えるお金の準備の考え方（具体的な金額は書かない）",
+        "mindset": "昼職1年目に戸惑いやすいことと、その乗り越え方"
+      }
+    },
+    "company": {
+      "label": "企業向け",
+      "badge": "FOR BUSINESS",
+      "cta_title": "採用・営業のご相談は",
+      "cta_lines": ["プロフィールのリンクから", "公式サイトのお問い合わせへ"],
+      "hashtags": ["#人材採用", "#採用担当", "#採用マーケティング", "#中途採用", "#営業代行", "#人材確保", "#採用課題", "#採用ブランディング", "#経営者"],
+      "themes": {
+        "potential": "職歴の肩書きでなく対人スキルで人材を見る視点",
+        "onboarding": "異業種出身者を受け入れるときの育成・定着の工夫",
+        "job_posting": "求職者に伝わる求人票の書き方",
+        "sns_recruiting": "SNSや広告を使った求人発信の考え方",
+        "funnel": "応募につながる採用導線の設計",
+        "sales_support": "営業代行・販路開拓という選択肢",
+        "partnership": "求人掲載・提携の相談方法"
+      }
+    }
+  },
+  "schedule": {
+    "_comment": "投稿は月・木の21:00 JST（ワークフローのcronと対応）。この時間帯外のスケジュール起動では投稿しない",
+    "post_weekdays": [0, 3],
+    "earliest_post_hour_jst": 20,
+    "latest_post_hour_jst": 23
+  },
+  "post": {
+    "audience_ratio": {"seeker": 2, "company": 1},
+    "audience_balance_window": 9,
+    "recent_theme_window": 4,
+    "content_slides_min": 4,
+    "content_slides_max": 5,
+    "max_title_chars": 22,
+    "max_subtitle_chars": 30,
+    "max_heading_chars": 18,
+    "max_slide_body_chars": 90,
+    "max_caption_chars": 500,
+    "min_hashtags": 3,
+    "max_hashtags": 8,
+    "history_compare_count": 40,
+    "max_similarity": 0.4,
+    "max_generation_attempts": 3
+  },
+  "claude": {
+    "generation_model": "claude-sonnet-5-5",
+    "review_model": "claude-haiku-5-5",
+    "analysis_model": "claude-sonnet-5-5",
+    "max_tokens_generation": 2500,
+    "max_tokens_review": 500,
+    "max_tokens_analysis": 2500
+  },
+  "instagram": {
+    "graph_version": "v26.0",
+    "container_poll_seconds": 5,
+    "container_poll_max": 36,
+    "image_url_wait_seconds": 10,
+    "image_url_wait_max": 18
+  },
+  "collect": {
+    "lookback_days": 30,
+    "metrics": ["reach", "likes", "comments", "saved", "shares", "total_interactions", "views"]
+  },
+  "analysis": {
+    "lookback_days": 56,
+    "min_post_age_hours": 72,
+    "min_posts_per_group": 4,
+    "min_posts_per_bucket": 2
+  },
+  "token": {
+    "warn_days_before_expiry": 21
+  },
+  "banned_patterns": [
+    "\\d+\\s*(社|名|人|件|%|％|万|倍|割)",
+    "実績",
+    "内定率",
+    "内定者",
+    "採用決定",
+    "満足度",
+    "利用者の声",
+    "お客様の声",
+    "体験談",
+    "口コミ",
+    "No\\.?\\s*1",
+    "ナンバーワン",
+    "業界初",
+    "日本一",
+    "絶対",
+    "必ず",
+    "確実に",
+    "保証",
+    "稼げる",
+    "高収入",
+    "急募",
+    "募集中",
+    "日給",
+    "時給",
+    "月給",
+    "年収",
+    "完全無料",
+    "無料",
+    "DMください",
+    "DMで"
+  ]
+}
