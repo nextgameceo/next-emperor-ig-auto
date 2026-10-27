@@ -88,9 +88,19 @@ jobs:
 
       - name: Install Japanese fonts
         if: steps.task.outputs.task == 'post'
+        timeout-minutes: 8
+        env:
+          DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra >/dev/null
+          # apt が固まることがあるため、1回4分で打ち切って最大3回やり直す
+          for i in 1 2 3; do
+            if timeout 240 sudo -E apt-get update -qq && \
+               timeout 240 sudo -E apt-get install -y -qq --no-install-recommends fonts-noto-cjk fonts-noto-cjk-extra >/dev/null; then
+              fc-list | grep -q "Noto Serif CJK JP" && echo "フォントOK" && exit 0
+            fi
+            echo "フォントのインストールに失敗（${i}/3）。再試行します"; sleep 10
+          done
+          exit 1
 
       - name: Checkout state branch (ig-data)
         run: |
