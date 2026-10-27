@@ -31,12 +31,16 @@ LOGO = ROOT / "assets" / "logo.png"
 NO_START = set("、。，．,.!！?？」』）)］]｝}〉》ー〜…・ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮヵヶ％%")
 NO_END = set("「『（(［[｛{〈《")
 
+FONT_DIR = ROOT / ".fonts"  # ワークフローがキャッシュ・ダウンロードしたフォントの置き場
 _FONT_CANDIDATES = {
-    "serif_bold": ["/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc",
+    "serif_bold": [str(FONT_DIR / "NotoSerifCJK-Bold.ttc"), str(FONT_DIR / "NotoSerifCJKjp-Bold.otf"),
+                   "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc",
                    "/usr/share/fonts/noto-cjk/NotoSerifCJK-Bold.ttc"],
-    "sans_bold": ["/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+    "sans_bold": [str(FONT_DIR / "NotoSansCJK-Bold.ttc"), str(FONT_DIR / "NotoSansCJKjp-Bold.otf"),
+                  "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
                   "/usr/share/fonts/noto-cjk/NotoSansCJK-Bold.ttc"],
-    "sans": ["/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+    "sans": [str(FONT_DIR / "NotoSansCJK-Regular.ttc"), str(FONT_DIR / "NotoSansCJKjp-Regular.otf"),
+             "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
              "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc"],
 }
 _font_cache: dict = {}

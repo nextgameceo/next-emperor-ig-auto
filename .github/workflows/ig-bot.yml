@@ -86,21 +86,40 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Install Japanese fonts
+      - name: Restore Japanese fonts (cache)
+        id: fontcache
         if: steps.task.outputs.task == 'post'
-        timeout-minutes: 8
+        uses: actions/cache@v4
+        with:
+          path: .fonts
+          key: noto-cjk-jp-v1
+
+      - name: Install Japanese fonts
+        if: steps.task.outputs.task == 'post' && steps.fontcache.outputs.cache-hit != 'true'
+        timeout-minutes: 10
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          # apt が固まることがあるため、1回4分で打ち切って最大3回やり直す
-          for i in 1 2 3; do
-            if timeout 240 sudo -E apt-get update -qq && \
-               timeout 240 sudo -E apt-get install -y -qq --no-install-recommends fonts-noto-cjk fonts-noto-cjk-extra >/dev/null; then
-              fc-list | grep -q "Noto Serif CJK JP" && echo "フォントOK" && exit 0
+          mkdir -p .fonts
+          ok() { ls .fonts/*Sans*Regular* .fonts/*Sans*Bold* .fonts/*Serif*Bold* >/dev/null 2>&1; }
+          # 1) apt（1回3分で打ち切り、最大2回）
+          for i in 1 2; do
+            if timeout 180 sudo -E apt-get update -qq && \
+               timeout 180 sudo -E apt-get install -y -qq --no-install-recommends fonts-noto-cjk >/dev/null; then
+              for f in NotoSansCJK-Regular.ttc NotoSansCJK-Bold.ttc NotoSerifCJK-Bold.ttc; do
+                find /usr/share/fonts -name "$f" -exec cp {} .fonts/ \; ; done
+              ok && break
             fi
-            echo "フォントのインストールに失敗（${i}/3）。再試行します"; sleep 10
+            echo "apt でのインストールに失敗（${i}/2）"; sleep 5
           done
-          exit 1
+          # 2) 配布元から直接ダウンロード
+          if ! ok; then
+            base=https://github.com/notofonts/noto-cjk/raw/main
+            for f in Sans/OTF/Japanese/NotoSansCJKjp-Regular.otf Sans/OTF/Japanese/NotoSansCJKjp-Bold.otf Serif/OTF/Japanese/NotoSerifCJKjp-Bold.otf; do
+              curl -fsSL --retry 3 --max-time 180 -o ".fonts/$(basename $f)" "$base/$f" || true
+            done
+          fi
+          ok && ls -la .fonts && echo "フォントOK" || { echo "::error::日本語フォントを用意できませんでした"; exit 1; }
 
       - name: Checkout state branch (ig-data)
         run: |
