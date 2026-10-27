@@ -23,6 +23,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "昼職1年目の戸惑い乗り越え方 「報連相」が最初の壁 分からないは早めに聞く 朝型の生活リズムづくり 夜の経験は仕事で活きる まず小さな一歩から",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e3bbeb73de6004758a8ec4f0b86dcf64284e24c2/images/2026-10-28/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e3bbeb73de6004758a8ec4f0b86dcf64284e24c2/images/2026-10-28/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e3bbeb73de6004758a8ec4f0b86dcf64284e24c2/images/2026-10-28/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e3bbeb73de6004758a8ec4f0b86dcf64284e24c2/images/2026-10-28/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e3bbeb73de6004758a8ec4f0b86dcf64284e24c2/images/2026-10-28/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e3bbeb73de6004758a8ec4f0b86dcf64284e24c2/images/2026-10-28/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e3bbeb73de6004758a8ec4f0b86dcf64284e24c2/images/2026-10-28/slide07.jpg"
+      ],
       "images": [
         "images/2026-10-28/slide01.jpg",
         "images/2026-10-28/slide02.jpg",
@@ -32,6 +41,9 @@
         "images/2026-10-28/slide06.jpg",
         "images/2026-10-28/slide07.jpg"
       ],
+      "media_id": "17881067958631005",
+      "permalink": "https://www.instagram.com/p/DfAbxJQm2rx/",
+      "published_at": "2026-10-27T17:50:39+0000",
       "slides": [
         {
           "body": "昼職は、進み具合をこまめに共有する文化が多いです。完了報告だけでなく、途中経過を短く伝えてみましょう。「ここまで進みました」の一言で、安心して任せてもらえます。",
@@ -54,7 +66,7 @@
           "heading": "まず小さな一歩から"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "つまずきやすい4つの場面と対処法",
       "theme": "mindset",
       "title": "昼職1年目の戸惑い\n乗り越え方"
