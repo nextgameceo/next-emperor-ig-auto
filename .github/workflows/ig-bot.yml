@@ -3,10 +3,14 @@ name: NEXT EMPEROR Instagram Bot (カルーセル投稿・収集・分析)
 # 本番投稿の条件（すべて満たす場合のみ）:
 #   1. リポジトリ変数 IG_BOT_MODE が 'live'
 #   2. スケジュール起動（月・木 21:00 JST）、または手動実行で allow_live_post にチェック
+#   ※ 例外: ops/post-now.txt を更新して main に push した場合は、IG_BOT_MODE に関係なく即時に本番投稿する
 #   3. スケジュール起動のときは 月・木の JST 20:00〜23:59 の間、かつ本日まだ投稿していない
 # それ以外は dry_run: 文章と画像を作って ig-data ブランチに保存するだけで、Instagramには投稿しない。
 
 on:
+  push:
+    branches: [main]
+    paths: ['ops/post-now.txt']   # このファイルを更新すると即時に本番投稿（本日まだ投稿していない場合のみ）
   schedule:
     - cron: '0 12 * * 1,4'   # 月・木 21:00 JST 投稿
     - cron: '40 12 * * 1,4'  # 月・木 21:40 JST 予備（遅延・取りこぼし対策。投稿済みなら何もしない）
@@ -53,7 +57,9 @@ jobs:
         run: |
           set -euo pipefail
           FLAGS=""
-          if [ "$EVENT" = "workflow_dispatch" ]; then
+          if [ "$EVENT" = "push" ]; then
+            TASK=post
+          elif [ "$EVENT" = "workflow_dispatch" ]; then
             TASK="$INPUT_TASK"
             if [ "$TASK" = "post" ] && [ "$FORCE_DRAFT" = "true" ]; then FLAGS="--force"; fi
           else
@@ -110,7 +116,7 @@ jobs:
       - name: Publish to Instagram
         if: steps.task.outputs.task == 'post'
         env:
-          IG_BOT_MODE: ${{ (vars.IG_BOT_MODE == 'live' && (github.event_name == 'schedule' || inputs.allow_live_post == true)) && 'live' || 'dry_run' }}
+          IG_BOT_MODE: ${{ (github.event_name == 'push' || (vars.IG_BOT_MODE == 'live' && (github.event_name == 'schedule' || inputs.allow_live_post == true))) && 'live' || 'dry_run' }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: |
