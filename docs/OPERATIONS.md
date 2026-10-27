@@ -27,6 +27,8 @@ Settings → Secrets and variables → Actions → **Variables** タブ → New 
 - Name: `IG_BOT_MODE`
 - Value: `live`
 
+（Secretsタブに同じ名前・値で登録してもOK）
+
 以降、**月・木の21:00**に自動で投稿されます。止めたいときは値を `off` に変えるだけ（下書き作成のみになる）。
 
 すぐに1本投稿したいときは、Run workflow で `allow_live_post` にチェックして実行（時間帯の制限なし）。
