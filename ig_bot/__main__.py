@@ -7,12 +7,13 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+import time
 
 from . import analyzer
 from .claude_client import ClaudeClient
 from .config import bot_mode, load_config, now_jst, require_env, MODE_LIVE
 from .ig_client import IGClient, IGError
-from .pipeline import check_token, run_collect, run_prepare, run_publish
+from .pipeline import check_token, run_collect, run_prepare, run_publish, seconds_until_post_time
 from .state import StateStore
 
 
@@ -79,6 +80,18 @@ def main(argv: list[str] | None = None) -> int:
             if not args.sha:
                 print("::error::--sha が必要です")
                 return 1
+            if args.scheduled:
+                rec = store.get_post(now.strftime("%Y-%m-%d"))
+                if rec and rec.get("status") == "draft":
+                    wait = seconds_until_post_time(now, config)
+                    if wait < 0:
+                        print("[publish] 投稿時刻まで長すぎるため待機しません（後の定期実行に任せます）")
+                    elif wait > 0:
+                        print(f"[publish] 投稿時刻（{config['schedule']['post_hour_jst']}:00 JST）まで "
+                              f"{int(wait // 60)}分 待機します")
+                        sys.stdout.flush()
+                        time.sleep(wait + 5)
+                        now = now_jst()
             ig = _ig(config) if mode == MODE_LIVE else None
             if mode != MODE_LIVE:
                 print("[ig_bot] dry_run: Instagramへの投稿は行いません（画像と文章の確認のみ）")

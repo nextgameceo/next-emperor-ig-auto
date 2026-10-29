@@ -298,3 +298,22 @@ def test_claude_thinking_off_fallback():
     assert c.complete("claude-sonnet-5-5", "p", 10) == "ok"
     assert c.complete("claude-sonnet-5-5", "p", 10) == "ok"
     assert sent == ["disabled", "between_tools", "between_tools"]  # 2回目からは最初から正しい形式
+
+
+def test_early_start_and_wait():
+    from ig_bot.pipeline import seconds_until_post_time
+    at = lambda h, m=0: datetime(2026, 10, 30, h, m, tzinfo=JST)
+    assert in_post_window(at(16, 7), CFG, phase="prepare")[0]           # 16時の起動で下書きは作る
+    assert not in_post_window(at(16, 7), CFG)[0]                        # まだ投稿はしない
+    assert in_post_window(at(21, 0), CFG)[0]
+    assert not in_post_window(at(2, 30), CFG, phase="prepare")[0]       # 深夜に届いた遅延起動は何もしない
+    assert seconds_until_post_time(at(16, 7), CFG) == 4 * 3600 + 53 * 60
+    assert seconds_until_post_time(at(22, 0), CFG) == 0
+    assert seconds_until_post_time(at(12, 0), CFG) == -1                # 6時間ジョブ上限を超える待機はしない
+
+
+def test_scheduled_prepare_afternoon(tmp_path):
+    store = StateStore(tmp_path / "s")
+    r = run_prepare(store=store, config=CFG, claude=FakeClaude([GOOD_POST, REVIEW_OK]),
+                    now=datetime(2026, 10, 30, 16, 7, tzinfo=JST), scheduled=True, force=False)
+    assert r["status"] == "ok"

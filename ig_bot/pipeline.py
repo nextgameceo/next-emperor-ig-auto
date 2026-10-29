@@ -19,13 +19,28 @@ def today(now: datetime) -> str:
     return now.strftime("%Y-%m-%d")
 
 
-def in_post_window(now: datetime, config: dict, check_weekday: bool = True) -> tuple[bool, str]:
+def in_post_window(now: datetime, config: dict, check_weekday: bool = True,
+                   phase: str = "publish") -> tuple[bool, str]:
+    """phase=prepare: 下書き作成を受け付ける時間帯（既定12〜23時）／phase=publish: 投稿してよい時間帯（既定21〜23時）。"""
     sc = config["schedule"]
     if check_weekday and now.weekday() not in sc["post_weekdays"]:
         return False, f"本日（{'月火水木金土日'[now.weekday()]}曜）は投稿日ではありません"
-    if not (sc["earliest_post_hour_jst"] <= now.hour <= sc["latest_post_hour_jst"]):
+    start = sc["prepare_from_hour_jst"] if phase == "prepare" else sc["post_hour_jst"]
+    if not (start <= now.hour <= sc["latest_post_hour_jst"]):
         return False, f"投稿時間帯外です（{now:%H:%M} JST）"
     return True, ""
+
+
+def seconds_until_post_time(now: datetime, config: dict) -> float:
+    """今日の投稿時刻までの秒数（過ぎていれば0）。待ち時間が上限を超える場合は -1。"""
+    sc = config["schedule"]
+    target = now.replace(hour=sc["post_hour_jst"], minute=0, second=0, microsecond=0)
+    wait = (target - now).total_seconds()
+    if wait <= 0:
+        return 0.0
+    if wait > sc["max_wait_hours"] * 3600:
+        return -1.0
+    return wait
 
 
 def history_for_generation(store: StateStore, date: str) -> list[dict]:
@@ -39,7 +54,7 @@ def run_prepare(*, store: StateStore, config: dict, claude, now: datetime, sched
                 force: bool) -> dict:
     date = today(now)
     if scheduled:
-        ok, why = in_post_window(now, config)
+        ok, why = in_post_window(now, config, phase="prepare")
         if not ok:
             return {"status": "skipped", "reason": why, "date": date}
     existing = store.get_post(date)
