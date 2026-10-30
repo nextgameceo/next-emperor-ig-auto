@@ -103,6 +103,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "求人発信は届ける人から決める まず来てほしい人を描く 仕事の中身を具体的に 届ける場所を選ぶ 応募までの道を短くする まず1つ見直してみよう",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7a290d1ae6161803017dce8656d6a30fd42c2f83/images/2026-10-30/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7a290d1ae6161803017dce8656d6a30fd42c2f83/images/2026-10-30/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7a290d1ae6161803017dce8656d6a30fd42c2f83/images/2026-10-30/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7a290d1ae6161803017dce8656d6a30fd42c2f83/images/2026-10-30/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7a290d1ae6161803017dce8656d6a30fd42c2f83/images/2026-10-30/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7a290d1ae6161803017dce8656d6a30fd42c2f83/images/2026-10-30/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7a290d1ae6161803017dce8656d6a30fd42c2f83/images/2026-10-30/slide07.jpg"
+      ],
       "images": [
         "images/2026-10-30/slide01.jpg",
         "images/2026-10-30/slide02.jpg",
@@ -112,6 +121,9 @@
         "images/2026-10-30/slide06.jpg",
         "images/2026-10-30/slide07.jpg"
       ],
+      "media_id": "18470208340184165",
+      "permalink": "https://www.instagram.com/p/DfHsV4SETr5/",
+      "published_at": "2026-10-30T13:30:08+0000",
       "slides": [
         {
           "body": "求人を出す前に、どんな人に来てほしいかを言葉にします。経験や価値観、働き方の希望まで書き出すと、発信の軸がぶれにくくなります。",
@@ -134,7 +146,7 @@
           "heading": "まず1つ見直してみよう"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "SNS・広告での求人発信 4つの考え方",
       "theme": "sns_recruiting",
       "title": "求人発信は\n届ける人から決める"
