@@ -1,0 +1,41 @@
+{
+  "data_sufficiency": "insufficient",
+  "findings": [],
+  "generated_at": "2026-11-02T15:30:53.260229+09:00",
+  "period_days": 56,
+  "recommendations": null,
+  "stats": {
+    "audiences": {
+      "company": {
+        "posts": 0
+      },
+      "seeker": {
+        "comments_total": 0,
+        "likes_total": 0,
+        "posts": 1,
+        "reach_median": 8,
+        "reach_total": 8,
+        "saved_total": 0,
+        "score_median": 0.0,
+        "shares_total": 0,
+        "total_interactions_total": 0
+      }
+    },
+    "bottom_posts": [],
+    "data_sufficiency": "insufficient",
+    "themes": {},
+    "top_posts": [
+      {
+        "audience": "seeker",
+        "reach": 8,
+        "saved": 0,
+        "score": 0.0,
+        "shares": 0,
+        "theme": "mindset",
+        "title": "昼職1年目の戸惑い\n乗り越え方"
+      }
+    ],
+    "total_posts": 1
+  },
+  "summary": null
+}
