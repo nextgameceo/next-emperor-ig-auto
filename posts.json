@@ -387,6 +387,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "求人票、ここを見れば迷わない 仕事内容は一日の流れで 給与は中身まで読む 勤務時間と休日を確認 福利厚生も大事な条件 気になる点はメモする",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b4797feba696861c0bff8c8861d4a5dcbcea333/images/2026-11-03/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b4797feba696861c0bff8c8861d4a5dcbcea333/images/2026-11-03/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b4797feba696861c0bff8c8861d4a5dcbcea333/images/2026-11-03/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b4797feba696861c0bff8c8861d4a5dcbcea333/images/2026-11-03/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b4797feba696861c0bff8c8861d4a5dcbcea333/images/2026-11-03/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b4797feba696861c0bff8c8861d4a5dcbcea333/images/2026-11-03/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b4797feba696861c0bff8c8861d4a5dcbcea333/images/2026-11-03/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-03/slide01.jpg",
         "images/2026-11-03/slide02.jpg",
@@ -396,6 +405,9 @@
         "images/2026-11-03/slide06.jpg",
         "images/2026-11-03/slide07.jpg"
       ],
+      "media_id": "18100648781539818",
+      "permalink": "https://www.instagram.com/p/DfSGsXXDts7/",
+      "published_at": "2026-11-03T14:32:47+0000",
       "slides": [
         {
           "body": "「事務」「営業」といった名前だけで判断せず、一日にどんな作業をするのか確認しましょう。自分の得意なことが活きそうか、想像しながら読むのがおすすめです。",
@@ -418,7 +430,7 @@
           "heading": "気になる点はメモする"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "応募前に確認したい5つの項目",
       "theme": "job_check",
       "title": "求人票、ここを見れば\n迷わない"
