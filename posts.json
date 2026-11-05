@@ -547,6 +547,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "収入が変わる前に決めておくお金のこと まず今の支出を知る 固定費と変動費に分ける 切り替え前後の流れを知る 備えは少しずつ積み立てる まず書き出すことから",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f2324fd6c4cfffaf17b3a85479ecd94bca1ad959/images/2026-11-05/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f2324fd6c4cfffaf17b3a85479ecd94bca1ad959/images/2026-11-05/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f2324fd6c4cfffaf17b3a85479ecd94bca1ad959/images/2026-11-05/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f2324fd6c4cfffaf17b3a85479ecd94bca1ad959/images/2026-11-05/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f2324fd6c4cfffaf17b3a85479ecd94bca1ad959/images/2026-11-05/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f2324fd6c4cfffaf17b3a85479ecd94bca1ad959/images/2026-11-05/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f2324fd6c4cfffaf17b3a85479ecd94bca1ad959/images/2026-11-05/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-05/slide01.jpg",
         "images/2026-11-05/slide02.jpg",
@@ -556,6 +565,9 @@
         "images/2026-11-05/slide06.jpg",
         "images/2026-11-05/slide07.jpg"
       ],
+      "media_id": "18120344434950944",
+      "permalink": "https://www.instagram.com/p/DfW-A4qDO-f/",
+      "published_at": "2026-11-05T11:53:09+0000",
       "slides": [
         {
           "body": "収入の変化に備える第一歩は、毎月いくら使っているかを知ることです。家賃や通信費など、毎月かかるお金を書き出してみましょう。ざっくりでも大丈夫です。",
@@ -578,7 +590,7 @@
           "heading": "まず書き出すことから"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "お金の準備を整える4つの考え方",
       "theme": "money_plan",
       "title": "収入が変わる前に\n決めておくお金のこと"
