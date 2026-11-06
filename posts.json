@@ -636,6 +636,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "得意なことは夜の中にある 毎日の行動を書き出す うれしかった場面を探す 苦にならないことに注目 仕事の言葉に言いかえる まず1つ選んでみよう",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae29ce85145194893535ed244ec66021189d81d9/images/2026-11-06/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae29ce85145194893535ed244ec66021189d81d9/images/2026-11-06/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae29ce85145194893535ed244ec66021189d81d9/images/2026-11-06/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae29ce85145194893535ed244ec66021189d81d9/images/2026-11-06/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae29ce85145194893535ed244ec66021189d81d9/images/2026-11-06/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae29ce85145194893535ed244ec66021189d81d9/images/2026-11-06/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae29ce85145194893535ed244ec66021189d81d9/images/2026-11-06/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-06/slide01.jpg",
         "images/2026-11-06/slide02.jpg",
@@ -645,6 +654,9 @@
         "images/2026-11-06/slide06.jpg",
         "images/2026-11-06/slide07.jpg"
       ],
+      "media_id": "17891459835468626",
+      "permalink": "https://www.instagram.com/p/DfZi2kJjTdD/",
+      "published_at": "2026-11-06T11:53:32+0000",
       "slides": [
         {
           "body": "まず夜の仕事で当たり前にやっていたことを、思いつくまま書き出します。上手い下手は気にせず、ひとつずつ紙に並べてみてください。",
@@ -667,7 +679,7 @@
           "heading": "まず1つ選んでみよう"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "自分の強みを見つける4つの手順",
       "theme": "self_analysis",
       "title": "得意なことは\n夜の中にある"
