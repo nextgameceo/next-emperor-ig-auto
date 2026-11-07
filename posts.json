@@ -716,6 +716,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "肩書きより、人を見る採用の新しい視点 職歴欄の外に力がある 初対面で関係を築く力 相手の変化に気づく力 面接で行動を聞いてみる まず評価の軸を言葉にする",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a508037259e5edc843e8e08196a20c39f8139f05/images/2026-11-07/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a508037259e5edc843e8e08196a20c39f8139f05/images/2026-11-07/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a508037259e5edc843e8e08196a20c39f8139f05/images/2026-11-07/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a508037259e5edc843e8e08196a20c39f8139f05/images/2026-11-07/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a508037259e5edc843e8e08196a20c39f8139f05/images/2026-11-07/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a508037259e5edc843e8e08196a20c39f8139f05/images/2026-11-07/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a508037259e5edc843e8e08196a20c39f8139f05/images/2026-11-07/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-07/slide01.jpg",
         "images/2026-11-07/slide02.jpg",
@@ -725,6 +734,9 @@
         "images/2026-11-07/slide06.jpg",
         "images/2026-11-07/slide07.jpg"
       ],
+      "media_id": "18110386412163015",
+      "permalink": "https://www.instagram.com/p/DfcHl-IFzCj/",
+      "published_at": "2026-11-07T11:53:07+0000",
       "slides": [
         {
           "body": "肩書きや社名だけでは、その人の力は見えきれません。話す、聞く、場を読む。仕事の土台になる力は、職歴欄の外にもあります。",
@@ -747,7 +759,7 @@
           "heading": "まず評価の軸を言葉にする"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "対人スキルで人材を見る4つの視点",
       "theme": "potential",
       "title": "肩書きより、人を見る\n採用の新しい視点"
