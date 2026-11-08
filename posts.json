@@ -797,6 +797,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "その気配りは仕事の強みです 接客は「提案力」 傾聴は「ヒアリング力」 状況判断は「対応力」 人への気づかいを言葉に まず1つだけ書き出そう",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae10b645186ae989bc2e2eaa06381cfbfe5dcffc/images/2026-11-08/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae10b645186ae989bc2e2eaa06381cfbfe5dcffc/images/2026-11-08/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae10b645186ae989bc2e2eaa06381cfbfe5dcffc/images/2026-11-08/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae10b645186ae989bc2e2eaa06381cfbfe5dcffc/images/2026-11-08/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae10b645186ae989bc2e2eaa06381cfbfe5dcffc/images/2026-11-08/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae10b645186ae989bc2e2eaa06381cfbfe5dcffc/images/2026-11-08/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae10b645186ae989bc2e2eaa06381cfbfe5dcffc/images/2026-11-08/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-08/slide01.jpg",
         "images/2026-11-08/slide02.jpg",
@@ -806,6 +815,9 @@
         "images/2026-11-08/slide06.jpg",
         "images/2026-11-08/slide07.jpg"
       ],
+      "media_id": "17970357879237362",
+      "permalink": "https://www.instagram.com/p/Dfe8vIJF_y4/",
+      "published_at": "2026-11-08T14:15:59+0000",
       "slides": [
         {
           "body": "お客様の好みや気分に合わせて、話題や席の流れを選んできたはず。それは相手のニーズを読んで提案する力です。「相手に合わせて動く」と書き出してみましょう。",
@@ -828,7 +840,7 @@
           "heading": "まず1つだけ書き出そう"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "夜職の力を言葉にする4つの視点",
       "theme": "strengths",
       "title": "その気配りは\n仕事の強みです"
