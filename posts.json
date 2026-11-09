@@ -878,6 +878,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "接客の経験が活きる仕事を知る 人と話す仕事は近い 営業職という選択肢 調整や段取りの仕事 職種名より仕事内容 まず気になる職種から",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/8517055f9303ef4859dc7eb84c0cb6e2f278f941/images/2026-11-09/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/8517055f9303ef4859dc7eb84c0cb6e2f278f941/images/2026-11-09/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/8517055f9303ef4859dc7eb84c0cb6e2f278f941/images/2026-11-09/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/8517055f9303ef4859dc7eb84c0cb6e2f278f941/images/2026-11-09/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/8517055f9303ef4859dc7eb84c0cb6e2f278f941/images/2026-11-09/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/8517055f9303ef4859dc7eb84c0cb6e2f278f941/images/2026-11-09/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/8517055f9303ef4859dc7eb84c0cb6e2f278f941/images/2026-11-09/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-09/slide01.jpg",
         "images/2026-11-09/slide02.jpg",
@@ -887,6 +896,9 @@
         "images/2026-11-09/slide06.jpg",
         "images/2026-11-09/slide07.jpg"
       ],
+      "media_id": "18122720039071497",
+      "permalink": "https://www.instagram.com/p/DfhRQG6DdpG/",
+      "published_at": "2026-11-09T11:53:39+0000",
       "slides": [
         {
           "body": "接客で培った会話力は、人と向き合う仕事で力になりやすいです。営業職や受付、販売などは、日々のやりとりの中でその経験が見えやすい職種です。",
@@ -909,7 +921,7 @@
           "heading": "まず気になる職種から"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "仕事選びの視点が見つかる4つの切り口",
       "theme": "job_types",
       "title": "接客の経験が\n活きる仕事を知る"
