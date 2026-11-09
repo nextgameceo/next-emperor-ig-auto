@@ -1,30 +1,35 @@
 {
   "data_sufficiency": "insufficient",
   "findings": [],
-  "generated_at": "2026-11-02T15:30:53.260229+09:00",
+  "generated_at": "2026-11-09T15:56:33.435734+09:00",
   "period_days": 56,
   "recommendations": null,
   "stats": {
     "audiences": {
       "company": {
-        "posts": 0
+        "comments_total": 0,
+        "likes_total": 0,
+        "posts": 2,
+        "reach_median": 1.0,
+        "reach_total": 2,
+        "saved_total": 0,
+        "score_median": 0.0,
+        "shares_total": 0,
+        "total_interactions_total": 0
       },
       "seeker": {
         "comments_total": 0,
         "likes_total": 0,
-        "posts": 1,
-        "reach_median": 8,
-        "reach_total": 8,
+        "posts": 4,
+        "reach_median": 1.0,
+        "reach_total": 11,
         "saved_total": 0,
         "score_median": 0.0,
         "shares_total": 0,
         "total_interactions_total": 0
       }
     },
-    "bottom_posts": [],
-    "data_sufficiency": "insufficient",
-    "themes": {},
-    "top_posts": [
+    "bottom_posts": [
       {
         "audience": "seeker",
         "reach": 8,
@@ -33,9 +38,58 @@
         "shares": 0,
         "theme": "mindset",
         "title": "昼職1年目の戸惑い\n乗り越え方"
+      },
+      {
+        "audience": "company",
+        "reach": 1,
+        "saved": 0,
+        "score": 0.0,
+        "shares": 0,
+        "theme": "sns_recruiting",
+        "title": "求人発信は\n届ける人から決める"
+      },
+      {
+        "audience": "seeker",
+        "reach": 1,
+        "saved": 0,
+        "score": 0.0,
+        "shares": 0,
+        "theme": "life_rhythm",
+        "title": "昼職の朝に慣れる\n生活リズムの整え方"
       }
     ],
-    "total_posts": 1
+    "data_sufficiency": "insufficient",
+    "themes": {},
+    "top_posts": [
+      {
+        "audience": "seeker",
+        "reach": 1,
+        "saved": 0,
+        "score": 0.0,
+        "shares": 0,
+        "theme": "money_plan",
+        "title": "収入が変わる前に\n決めておくお金のこと"
+      },
+      {
+        "audience": "company",
+        "reach": 1,
+        "saved": 0,
+        "score": 0.0,
+        "shares": 0,
+        "theme": "funnel",
+        "title": "応募の入口から\n出口まで見直す"
+      },
+      {
+        "audience": "seeker",
+        "reach": 1,
+        "saved": 0,
+        "score": 0.0,
+        "shares": 0,
+        "theme": "job_check",
+        "title": "求人票、ここを見れば\n迷わない"
+      }
+    ],
+    "total_posts": 6
   },
   "summary": null
 }
