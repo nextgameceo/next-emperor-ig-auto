@@ -959,6 +959,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "相談前に整理したい求人掲載の準備 まず採用したい人物像 仕事内容を言葉にする 困りごとを書き出す 相談できる内容を知る まずはフォームから",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae5b84c830c9014b66be9ad0fbb80c4b8805ea0e/images/2026-11-10/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae5b84c830c9014b66be9ad0fbb80c4b8805ea0e/images/2026-11-10/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae5b84c830c9014b66be9ad0fbb80c4b8805ea0e/images/2026-11-10/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae5b84c830c9014b66be9ad0fbb80c4b8805ea0e/images/2026-11-10/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae5b84c830c9014b66be9ad0fbb80c4b8805ea0e/images/2026-11-10/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae5b84c830c9014b66be9ad0fbb80c4b8805ea0e/images/2026-11-10/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/ae5b84c830c9014b66be9ad0fbb80c4b8805ea0e/images/2026-11-10/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-10/slide01.jpg",
         "images/2026-11-10/slide02.jpg",
@@ -968,6 +977,9 @@
         "images/2026-11-10/slide06.jpg",
         "images/2026-11-10/slide07.jpg"
       ],
+      "media_id": "18080280191431247",
+      "permalink": "https://www.instagram.com/p/Dfj2ApdF2eJ/",
+      "published_at": "2026-11-10T11:53:25+0000",
       "slides": [
         {
           "body": "どんな人に来てほしいかを、できる範囲で書き出してみましょう。経験の有無より、大切にしたい姿勢や強みを言葉にしておくと、相談がスムーズに進みます。",
@@ -990,7 +1002,7 @@
           "heading": "まずはフォームから"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "お問い合わせ前の4つの整理ポイント",
       "theme": "partnership",
       "title": "相談前に整理したい\n求人掲載の準備"
