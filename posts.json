@@ -1040,6 +1040,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "面接で経歴を話す前の整理術 隠さず、短く話す 仕事の中身から話す 1つの場面を用意する 応募先に合わせて話す まず声に出して練習",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b11918139f130bb097b22c8e5df0a60f5dc9a13a/images/2026-11-11/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b11918139f130bb097b22c8e5df0a60f5dc9a13a/images/2026-11-11/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b11918139f130bb097b22c8e5df0a60f5dc9a13a/images/2026-11-11/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b11918139f130bb097b22c8e5df0a60f5dc9a13a/images/2026-11-11/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b11918139f130bb097b22c8e5df0a60f5dc9a13a/images/2026-11-11/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b11918139f130bb097b22c8e5df0a60f5dc9a13a/images/2026-11-11/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b11918139f130bb097b22c8e5df0a60f5dc9a13a/images/2026-11-11/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-11/slide01.jpg",
         "images/2026-11-11/slide02.jpg",
@@ -1049,6 +1058,9 @@
         "images/2026-11-11/slide06.jpg",
         "images/2026-11-11/slide07.jpg"
       ],
+      "media_id": "17898650010415727",
+      "permalink": "https://www.instagram.com/p/DfmaytTDszL/",
+      "published_at": "2026-11-11T11:53:20+0000",
       "slides": [
         {
           "body": "夜職の経験は、聞かれたら落ち着いて答えれば大丈夫です。長い説明や言い訳は不要です。働いた事実を一言で伝え、次に「そこで何をしたか」へ話を進めましょう。",
@@ -1071,7 +1083,7 @@
           "heading": "まず声に出して練習"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "夜の経験を伝える4つの考え方",
       "theme": "interview_prep",
       "title": "面接で経歴を\n話す前の整理術"
