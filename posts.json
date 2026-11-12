@@ -1136,6 +1136,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "異業種出身者が根づく職場の工夫 最初に役割を伝える 業界用語を言いかえる 相談役を決めておく 経験を仕事で活かす まず一つだけ試す",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e658d2c26d408b01c738cb33ff1d5a7e08bceccb/images/2026-11-12/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e658d2c26d408b01c738cb33ff1d5a7e08bceccb/images/2026-11-12/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e658d2c26d408b01c738cb33ff1d5a7e08bceccb/images/2026-11-12/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e658d2c26d408b01c738cb33ff1d5a7e08bceccb/images/2026-11-12/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e658d2c26d408b01c738cb33ff1d5a7e08bceccb/images/2026-11-12/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e658d2c26d408b01c738cb33ff1d5a7e08bceccb/images/2026-11-12/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e658d2c26d408b01c738cb33ff1d5a7e08bceccb/images/2026-11-12/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-12/slide01.jpg",
         "images/2026-11-12/slide02.jpg",
@@ -1145,6 +1154,9 @@
         "images/2026-11-12/slide06.jpg",
         "images/2026-11-12/slide07.jpg"
       ],
+      "media_id": "18068056277626307",
+      "permalink": "https://www.instagram.com/p/Dfo_nsblpVV/",
+      "published_at": "2026-11-12T11:53:31+0000",
       "slides": [
         {
           "body": "入社直後は、何を期待されているのかが見えにくいものです。担当する仕事と任せたい範囲を、初日に言葉で伝えましょう。迷いが減り、動き出しやすくなります。",
@@ -1167,7 +1179,7 @@
           "heading": "まず一つだけ試す"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "育成と定着を支える4つの工夫",
       "theme": "onboarding",
       "title": "異業種出身者が\n根づく職場の工夫"
