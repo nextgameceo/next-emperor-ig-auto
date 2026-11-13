@@ -1215,6 +1215,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "昼職の前に整える睡眠と食事の型 最初に寝る時間を決める 寝る前の習慣を1つ作る 食事の時間をそろえる 予定は朝の前日に確認 まずは今日の1つから",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/c572cd7f3ce922b387edecbd69f45f7809070dec/images/2026-11-13/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/c572cd7f3ce922b387edecbd69f45f7809070dec/images/2026-11-13/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/c572cd7f3ce922b387edecbd69f45f7809070dec/images/2026-11-13/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/c572cd7f3ce922b387edecbd69f45f7809070dec/images/2026-11-13/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/c572cd7f3ce922b387edecbd69f45f7809070dec/images/2026-11-13/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/c572cd7f3ce922b387edecbd69f45f7809070dec/images/2026-11-13/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/c572cd7f3ce922b387edecbd69f45f7809070dec/images/2026-11-13/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-13/slide01.jpg",
         "images/2026-11-13/slide02.jpg",
@@ -1224,6 +1233,9 @@
         "images/2026-11-13/slide06.jpg",
         "images/2026-11-13/slide07.jpg"
       ],
+      "media_id": "18119135447029872",
+      "permalink": "https://www.instagram.com/p/DfrkdBGE1jQ/",
+      "published_at": "2026-11-13T11:53:58+0000",
       "slides": [
         {
           "body": "起きる時間より先に、寝る時間の目安を決めてみましょう。いきなり変えず、今より少し早める程度で十分です。続けられる形が何より大切です。",
@@ -1246,7 +1258,7 @@
           "heading": "まずは今日の1つから"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "無理なく切り替える5つのヒント",
       "theme": "life_rhythm",
       "title": "昼職の前に整える\n睡眠と食事の型"
