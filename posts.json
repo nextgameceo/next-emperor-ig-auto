@@ -1294,6 +1294,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "営業の手が足りない外に任せる選択肢 営業を外に任せる手もある まず任せたい範囲を決める 販路の広げ方を言葉にする 営業戦略から相談できる まず困りごとを書き出そう",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2665525c021da18621bf16da041b2f0100b979c7/images/2026-11-14/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2665525c021da18621bf16da041b2f0100b979c7/images/2026-11-14/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2665525c021da18621bf16da041b2f0100b979c7/images/2026-11-14/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2665525c021da18621bf16da041b2f0100b979c7/images/2026-11-14/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2665525c021da18621bf16da041b2f0100b979c7/images/2026-11-14/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2665525c021da18621bf16da041b2f0100b979c7/images/2026-11-14/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2665525c021da18621bf16da041b2f0100b979c7/images/2026-11-14/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-14/slide01.jpg",
         "images/2026-11-14/slide02.jpg",
@@ -1303,6 +1312,9 @@
         "images/2026-11-14/slide06.jpg",
         "images/2026-11-14/slide07.jpg"
       ],
+      "media_id": "18021546413948167",
+      "permalink": "https://www.instagram.com/p/DfuJR_1k1Cm/",
+      "published_at": "2026-11-14T11:54:14+0000",
       "slides": [
         {
           "body": "営業の人手が足りないとき、採用だけが答えとは限りません。営業代行や販路開拓は、外の力を借りて動き出す選択肢のひとつです。",
@@ -1325,7 +1337,7 @@
           "heading": "まず困りごとを書き出そう"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "営業代行を考える前の4つの視点",
       "theme": "sales_support",
       "title": "営業の手が足りない\n外に任せる選択肢"
