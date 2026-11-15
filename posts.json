@@ -1374,6 +1374,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "条件の奥まで読む人が選べる まず仕事内容を確認 勤務時間は始業と終業 休日の決まり方を見る 給与は内訳まで読む 福利厚生も条件の一つ",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/6d13c94e7bad12c137a97c90a1535266345df303/images/2026-11-15/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/6d13c94e7bad12c137a97c90a1535266345df303/images/2026-11-15/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/6d13c94e7bad12c137a97c90a1535266345df303/images/2026-11-15/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/6d13c94e7bad12c137a97c90a1535266345df303/images/2026-11-15/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/6d13c94e7bad12c137a97c90a1535266345df303/images/2026-11-15/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/6d13c94e7bad12c137a97c90a1535266345df303/images/2026-11-15/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/6d13c94e7bad12c137a97c90a1535266345df303/images/2026-11-15/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-15/slide01.jpg",
         "images/2026-11-15/slide02.jpg",
@@ -1383,6 +1392,9 @@
         "images/2026-11-15/slide06.jpg",
         "images/2026-11-15/slide07.jpg"
       ],
+      "media_id": "18178072549456085",
+      "permalink": "https://www.instagram.com/p/DfwuDGFmGuK/",
+      "published_at": "2026-11-15T11:53:53+0000",
       "slides": [
         {
           "body": "職種名だけで判断せず、実際に何をするのかを読みましょう。誰とどんな場面で関わるのか、一日の流れが想像できるかを見てください。",
@@ -1405,7 +1417,7 @@
           "heading": "福利厚生も条件の一つ"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "求人を見るとき確認したい5つの項目",
       "theme": "job_check",
       "title": "条件の奥まで\n読む人が選べる"
