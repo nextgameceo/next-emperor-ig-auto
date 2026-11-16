@@ -1455,6 +1455,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "昼職1年目の私が最初につまずく場面 最初の壁は報連相 分からないは早めに聞く メモを1冊にまとめる 朝の時間を整える 経験は仕事で活きる",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/36a1b42e1093cd6f727801497d2ac275cc602ced/images/2026-11-16/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/36a1b42e1093cd6f727801497d2ac275cc602ced/images/2026-11-16/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/36a1b42e1093cd6f727801497d2ac275cc602ced/images/2026-11-16/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/36a1b42e1093cd6f727801497d2ac275cc602ced/images/2026-11-16/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/36a1b42e1093cd6f727801497d2ac275cc602ced/images/2026-11-16/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/36a1b42e1093cd6f727801497d2ac275cc602ced/images/2026-11-16/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/36a1b42e1093cd6f727801497d2ac275cc602ced/images/2026-11-16/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-16/slide01.jpg",
         "images/2026-11-16/slide02.jpg",
@@ -1464,6 +1473,9 @@
         "images/2026-11-16/slide06.jpg",
         "images/2026-11-16/slide07.jpg"
       ],
+      "media_id": "18124637335916144",
+      "permalink": "https://www.instagram.com/p/DfzTBKdFyOM/",
+      "published_at": "2026-11-16T11:55:30+0000",
       "slides": [
         {
           "body": "夜の現場は、その場で判断して動く場面が多かったはずです。昼職は途中経過を共有する場面が増えます。戸惑うのは自然なことで、慣れの問題です。",
@@ -1486,7 +1498,7 @@
           "heading": "経験は仕事で活きる"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "場面別に見る4つの乗り越え方",
       "theme": "mindset",
       "title": "昼職1年目の私が\n最初につまずく場面"
