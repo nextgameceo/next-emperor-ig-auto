@@ -1543,6 +1543,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "求人発信前の準備チェック帳 1 誰に届けたいか 2 伝える仕事の中身 3 発信の場所を選ぶ 4 応募までの道を確認 5 まず一枚書き出す",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f1bfb38c5dcd4511cd6e4a1412a97b6641a799c9/images/2026-11-17/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f1bfb38c5dcd4511cd6e4a1412a97b6641a799c9/images/2026-11-17/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f1bfb38c5dcd4511cd6e4a1412a97b6641a799c9/images/2026-11-17/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f1bfb38c5dcd4511cd6e4a1412a97b6641a799c9/images/2026-11-17/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f1bfb38c5dcd4511cd6e4a1412a97b6641a799c9/images/2026-11-17/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f1bfb38c5dcd4511cd6e4a1412a97b6641a799c9/images/2026-11-17/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/f1bfb38c5dcd4511cd6e4a1412a97b6641a799c9/images/2026-11-17/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-17/slide01.jpg",
         "images/2026-11-17/slide02.jpg",
@@ -1552,6 +1561,9 @@
         "images/2026-11-17/slide06.jpg",
         "images/2026-11-17/slide07.jpg"
       ],
+      "media_id": "18106053377531852",
+      "permalink": "https://www.instagram.com/p/Df13kBgIGsP/",
+      "published_at": "2026-11-17T11:53:20+0000",
       "slides": [
         {
           "body": "SNSや広告を使う前に、届けたい相手を一人思い浮かべます。年齢や経験、今どんな働き方をしているかを書き出すと、言葉選びの軸が決まります。",
@@ -1574,7 +1586,7 @@
           "heading": "5 まず一枚書き出す"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "自社に置き換えて使える5つの確認",
       "theme": "sns_recruiting",
       "title": "求人発信前の\n準備チェック帳"
