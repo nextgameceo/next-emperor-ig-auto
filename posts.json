@@ -1631,6 +1631,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "転職、まだ迷う夜は3つだけ試して まず今の気持ちを書く 気になる条件を3つ選ぶ 詳細ページを読み比べる 応募は決めてからでいい 今日やるのは1つだけ",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a60b432e7a20fd1673f0ae71309f30846bf18144/images/2026-11-18/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a60b432e7a20fd1673f0ae71309f30846bf18144/images/2026-11-18/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a60b432e7a20fd1673f0ae71309f30846bf18144/images/2026-11-18/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a60b432e7a20fd1673f0ae71309f30846bf18144/images/2026-11-18/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a60b432e7a20fd1673f0ae71309f30846bf18144/images/2026-11-18/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a60b432e7a20fd1673f0ae71309f30846bf18144/images/2026-11-18/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/a60b432e7a20fd1673f0ae71309f30846bf18144/images/2026-11-18/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-18/slide01.jpg",
         "images/2026-11-18/slide02.jpg",
@@ -1640,6 +1649,9 @@
         "images/2026-11-18/slide06.jpg",
         "images/2026-11-18/slide07.jpg"
       ],
+      "media_id": "17883335559548050",
+      "permalink": "https://www.instagram.com/p/Df4cW--GJe8/",
+      "published_at": "2026-11-18T11:53:15+0000",
       "slides": [
         {
           "body": "転職したい理由も、迷う理由も、そのまま紙に書き出します。きれいにまとめなくて大丈夫です。気持ちが見えると、次に知りたいことが分かってきます。",
@@ -1662,7 +1674,7 @@
           "heading": "今日やるのは1つだけ"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "急がず始める情報収集の4つの型",
       "theme": "first_step",
       "title": "転職、まだ迷う夜は\n3つだけ試して"
