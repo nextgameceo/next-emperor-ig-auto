@@ -1784,6 +1784,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "求人票が読まれない理由を見直す 読む人を一人に絞る 仕事は一日の流れで書く 条件は確認しやすく並べる 経験を迎える一言を添える 応募の道筋まで見せる",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2e5c78538cad6b4bcf660e1db268c84b373b239b/images/2026-11-20/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2e5c78538cad6b4bcf660e1db268c84b373b239b/images/2026-11-20/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2e5c78538cad6b4bcf660e1db268c84b373b239b/images/2026-11-20/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2e5c78538cad6b4bcf660e1db268c84b373b239b/images/2026-11-20/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2e5c78538cad6b4bcf660e1db268c84b373b239b/images/2026-11-20/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2e5c78538cad6b4bcf660e1db268c84b373b239b/images/2026-11-20/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/2e5c78538cad6b4bcf660e1db268c84b373b239b/images/2026-11-20/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-20/slide01.jpg",
         "images/2026-11-20/slide02.jpg",
@@ -1793,6 +1802,9 @@
         "images/2026-11-20/slide06.jpg",
         "images/2026-11-20/slide07.jpg"
       ],
+      "media_id": "18151260913568310",
+      "permalink": "https://www.instagram.com/p/Df9l_F2lzjF/",
+      "published_at": "2026-11-20T11:53:38+0000",
       "slides": [
         {
           "body": "求人票を書く前に、どんな人に読んでほしいかを一人分書き出します。夜職からの転職を考える人も含め、読み手を思い浮かべると言葉選びが定まります。",
@@ -1815,7 +1827,7 @@
           "heading": "応募の道筋まで見せる"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "採用担当が見直す4つの視点",
       "theme": "job_posting",
       "title": "求人票が読まれない\n理由を見直す"
