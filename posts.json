@@ -1865,6 +1865,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "接客が長い人の昼職の選び方 人と話す仕事は近い 提案する仕事を見る 調整役の仕事もある 職種名より中身を見る まず気になる1つから",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e675eb096cb25fca0a3732aa72b0b039db0c0d82/images/2026-11-21/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e675eb096cb25fca0a3732aa72b0b039db0c0d82/images/2026-11-21/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e675eb096cb25fca0a3732aa72b0b039db0c0d82/images/2026-11-21/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e675eb096cb25fca0a3732aa72b0b039db0c0d82/images/2026-11-21/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e675eb096cb25fca0a3732aa72b0b039db0c0d82/images/2026-11-21/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e675eb096cb25fca0a3732aa72b0b039db0c0d82/images/2026-11-21/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/e675eb096cb25fca0a3732aa72b0b039db0c0d82/images/2026-11-21/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-21/slide01.jpg",
         "images/2026-11-21/slide02.jpg",
@@ -1874,6 +1883,9 @@
         "images/2026-11-21/slide06.jpg",
         "images/2026-11-21/slide07.jpg"
       ],
+      "media_id": "18142266733727132",
+      "permalink": "https://www.instagram.com/p/DgAKrWJIRcp/",
+      "published_at": "2026-11-21T11:52:41+0000",
       "slides": [
         {
           "body": "お客様の話を聞き、気持ちを察して言葉を選ぶ。この流れは、窓口や受付、販売などの仕事とよく重なります。まずは近い場面を探してみましょう。",
@@ -1896,7 +1908,7 @@
           "heading": "まず気になる1つから"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "経験を活かす職種を見極める4つの目",
       "theme": "job_types",
       "title": "接客が長い人の\n昼職の選び方"
