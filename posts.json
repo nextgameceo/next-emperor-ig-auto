@@ -1946,6 +1946,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "面接で経歴を聞かれた夜の人の答え方 最初の一言を決める 仕事の中身を一文で 場面を1つだけ選ぶ 応募先の仕事につなぐ 声に出して練習する",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/d26430e1032f663eb01e9a1e64907d0cc48e986f/images/2026-11-22/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/d26430e1032f663eb01e9a1e64907d0cc48e986f/images/2026-11-22/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/d26430e1032f663eb01e9a1e64907d0cc48e986f/images/2026-11-22/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/d26430e1032f663eb01e9a1e64907d0cc48e986f/images/2026-11-22/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/d26430e1032f663eb01e9a1e64907d0cc48e986f/images/2026-11-22/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/d26430e1032f663eb01e9a1e64907d0cc48e986f/images/2026-11-22/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/d26430e1032f663eb01e9a1e64907d0cc48e986f/images/2026-11-22/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-22/slide01.jpg",
         "images/2026-11-22/slide02.jpg",
@@ -1955,6 +1964,9 @@
         "images/2026-11-22/slide06.jpg",
         "images/2026-11-22/slide07.jpg"
       ],
+      "media_id": "17977937447944222",
+      "permalink": "https://www.instagram.com/p/DgCvmdPlwYD/",
+      "published_at": "2026-11-22T11:53:53+0000",
       "slides": [
         {
           "body": "聞かれたら、事実を短く伝えるところから始めます。言い訳や長い前置きは不要です。「夜の仕事をしていました」と落ち着いて話せば、その先を聞いてもらいやすくなります。",
@@ -1977,7 +1989,7 @@
           "heading": "声に出して練習する"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "30秒で話せる4つの組み立て方",
       "theme": "interview_prep",
       "title": "面接で経歴を聞かれた\n夜の人の答え方"
