@@ -2033,6 +2033,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "応募される求人は道筋が見えている まず応募の流れを書く 発信の先を1つにそろえる 判断に必要な情報を並べる 応募の入口をわかりやすく まず1つ試してみよう",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/1960cb2d4dc10919daedfb19e3f83ed90bcb277b/images/2026-11-23/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/1960cb2d4dc10919daedfb19e3f83ed90bcb277b/images/2026-11-23/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/1960cb2d4dc10919daedfb19e3f83ed90bcb277b/images/2026-11-23/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/1960cb2d4dc10919daedfb19e3f83ed90bcb277b/images/2026-11-23/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/1960cb2d4dc10919daedfb19e3f83ed90bcb277b/images/2026-11-23/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/1960cb2d4dc10919daedfb19e3f83ed90bcb277b/images/2026-11-23/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/1960cb2d4dc10919daedfb19e3f83ed90bcb277b/images/2026-11-23/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-23/slide01.jpg",
         "images/2026-11-23/slide02.jpg",
@@ -2042,6 +2051,9 @@
         "images/2026-11-23/slide06.jpg",
         "images/2026-11-23/slide07.jpg"
       ],
+      "media_id": "18079381691732749",
+      "permalink": "https://www.instagram.com/p/DgFURAZHWPO/",
+      "published_at": "2026-11-23T11:52:39+0000",
       "slides": [
         {
           "body": "求人を見つけてから応募するまでの道を、順番に書き出します。自社の求人を求職者の目線でたどると、迷いやすい場所が見えてきます。",
@@ -2064,7 +2076,7 @@
           "heading": "まず1つ試してみよう"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "応募導線を整える4つの視点",
       "theme": "funnel",
       "title": "応募される求人は\n道筋が見えている"
