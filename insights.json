@@ -2,64 +2,57 @@
   "data_sufficiency": "sufficient",
   "findings": [
     {
-      "claim": "全体としてリーチが極めて小さく、反応の有無を評価できる水準に達していない",
+      "claim": "全体としてリーチが極端に小さく、深い反応（保存・シェア・コメント）が一切発生していない",
       "confidence": "high",
-      "evidence": "求職者向け8投稿でリーチ合計22(中央値1.0)、企業向け5投稿でリーチ合計10(中央値2)"
+      "evidence": "seeker: 12投稿・リーチ合計32・保存/シェア/コメント0・いいね3。company: 7投稿・リーチ合計14・保存/シェア/コメント0・いいね3。両者ともscore中央値0.0"
     },
     {
-      "claim": "保存・シェア・コメントが全くなく、深い反応は確認できていない",
+      "claim": "scoreの上位投稿は、分母（リーチ）が2〜3しかないため、いいね1件で値が跳ねただけの可能性が高く、勝ちパターンとは言えない",
       "confidence": "high",
-      "evidence": "両属性とも saved_total=0, shares_total=0, comments_total=0。反応はいいねのみ(求職者1件、企業2件)"
+      "evidence": "1位 company:sns_recruiting score0.5（リーチ2）、seeker:first_step・mindset score0.3333（各リーチ3）。いずれも保存0・シェア0"
     },
     {
-      "claim": "上位投稿のscoreは高く見えるが、リーチ3〜4に対するいいね1件程度の結果で、偶然の可能性が高い",
+      "claim": "seeker:mindsetは相対的にリーチが大きいが、反応には結びついていない。投稿ごとのばらつきも大きい",
       "confidence": "low",
-      "evidence": "上位3件はscore 0.25〜0.3333、リーチ3〜4、保存・シェアは0。企業向けのonboarding・partnershipと求職者向けinterview_prepが該当"
+      "evidence": "mindset 2投稿でリーチ合計12（中央値6.0）、いいね1、score中央値0.1667。下位投稿の1本はリーチ9でscore0.0、上位投稿の1本はリーチ3でscore0.3333"
     },
     {
-      "claim": "属性間(求職者vs企業)の優劣は判断できない",
+      "claim": "seeker:life_rhythmとjob_checkはリーチが特に小さく、現状では届いていない。ただし投稿数が各2のため、テーマ自体の不振とは断定できない",
       "confidence": "low",
-      "evidence": "score_medianは両属性とも0.0。いいね合計は1件と2件の差のみ"
+      "evidence": "life_rhythm: リーチ合計2・中央値1.0・反応0。job_check: リーチ合計3・中央値1.5・反応0"
     },
     {
-      "claim": "最もリーチが大きかったmindset投稿でも反応が0で、リーチが増えれば反応が出るとは限らない可能性がある(仮説)",
+      "claim": "company:sns_recruitingは2投稿で、チェックリスト型タイトルの方が反応(いいね)が出たが、差は1件で判断できない。仮説として、「準備チェック帳」のような実用的な型は試す価値がある",
       "confidence": "low",
-      "evidence": "「昼職1年目の戸惑い 乗り越え方」はリーチ9だが score 0.0、保存・シェア0。ただし1投稿のみで断定不可"
-    },
-    {
-      "claim": "テーマ別集計(themes)が空のため、テーマ単位の傾向は分析できない",
-      "confidence": "medium",
-      "evidence": "themes: {} 。各テーマの投稿数も1本程度と見られ比較不能"
+      "evidence": "sns_recruiting score中央値0.25。「求人発信前の準備チェック帳」score0.5（リーチ2）、「求人発信は届ける人から決める」score0.0（リーチ2）"
     }
   ],
-  "generated_at": "2026-11-16T15:54:43.974967+09:00",
+  "generated_at": "2026-11-23T16:56:03.121802+09:00",
   "period_days": 56,
   "recommendations": {
     "company": {
       "avoid_themes": [],
       "prefer_themes": [
-        "onboarding",
-        "job_posting",
-        "partnership"
+        "sns_recruiting"
       ],
       "style_notes": [
-        "onboarding・partnershipが上位だがリーチ3・いいね1件規模のため、継続検証の候補として扱う",
-        "求人担当者が自社に置き換えやすい『準備チェック』『手順』形式を試し、保存・シェアの発生有無を確認する",
-        "sns_recruitingは1投稿でscore 0.0だが母数が小さく、避ける根拠にはならない。表紙を変えて再検証してもよい"
+        "sns_recruitingはいいねが1件出ているが小標本のため、「準備チェック帳」型を再度出して再現するか確認する",
+        "チェックリストやテンプレなど保存したくなる構成を試し、保存・シェアが出るか観察する",
+        "投稿数が7と少ないため、テーマ追加よりも同じ型の反復でデータを増やす"
       ]
     },
     "seeker": {
       "avoid_themes": [],
       "prefer_themes": [
-        "interview_prep",
-        "first_step",
-        "job_check"
+        "mindset",
+        "first_step"
       ],
       "style_notes": [
-        "avoid_themesは根拠不足のため設定しない。interview_prepは上位に出たが暫定的な検証候補にとどめる",
-        "表紙は『誰の・どんな悩みか』が一目で分かる具体的な表現にし、2行改行のタイトルは維持しつつ数字や具体場面を入れて比較検証する",
-        "最終ページに『保存して見返せるチェックリスト』など保存したくなる要素を入れ、保存数の変化を見る",
-        "同一テーマで表紙の型だけ変えた投稿を複数回出して差を検証する(仮説検証)"
+        "現時点でテーマを避ける根拠は不足しているため、avoidは設定しない（life_rhythm・job_checkは投稿数2のみ）",
+        "mindsetは相対的にリーチがあるため、保存されやすい形（共感に加え「具体的な行動3つ」など持ち帰れる要素）で検証する",
+        "表紙は「迷う夜は3つだけ」のように、状況＋数字で具体化した型を試す（仮説）",
+        "最終ページに保存を促す一言（「あとで見返す用に保存」など）を入れ、保存の有無を比較する",
+        "テーマを増やさず、同テーマで表紙文言だけ変えて比較するなど、変更点を1つに絞る"
       ]
     }
   },
@@ -67,25 +60,25 @@
     "audiences": {
       "company": {
         "comments_total": 0,
-        "likes_total": 2,
-        "posts": 5,
+        "likes_total": 3,
+        "posts": 7,
         "reach_median": 2,
-        "reach_total": 10,
+        "reach_total": 14,
         "saved_total": 0,
         "score_median": 0.0,
         "shares_total": 0,
-        "total_interactions_total": 2
+        "total_interactions_total": 3
       },
       "seeker": {
         "comments_total": 0,
-        "likes_total": 1,
-        "posts": 8,
-        "reach_median": 1.0,
-        "reach_total": 22,
+        "likes_total": 3,
+        "posts": 12,
+        "reach_median": 1.5,
+        "reach_total": 32,
         "saved_total": 0,
         "score_median": 0.0,
         "shares_total": 0,
-        "total_interactions_total": 1
+        "total_interactions_total": 3
       }
     },
     "bottom_posts": [
@@ -118,37 +111,82 @@
       }
     ],
     "data_sufficiency": "sufficient",
-    "themes": {},
+    "themes": {
+      "company:sns_recruiting": {
+        "comments_total": 0,
+        "likes_total": 1,
+        "posts": 2,
+        "reach_median": 2.0,
+        "reach_total": 4,
+        "saved_total": 0,
+        "score_median": 0.25,
+        "shares_total": 0,
+        "total_interactions_total": 1
+      },
+      "seeker:job_check": {
+        "comments_total": 0,
+        "likes_total": 0,
+        "posts": 2,
+        "reach_median": 1.5,
+        "reach_total": 3,
+        "saved_total": 0,
+        "score_median": 0.0,
+        "shares_total": 0,
+        "total_interactions_total": 0
+      },
+      "seeker:life_rhythm": {
+        "comments_total": 0,
+        "likes_total": 0,
+        "posts": 2,
+        "reach_median": 1.0,
+        "reach_total": 2,
+        "saved_total": 0,
+        "score_median": 0.0,
+        "shares_total": 0,
+        "total_interactions_total": 0
+      },
+      "seeker:mindset": {
+        "comments_total": 0,
+        "likes_total": 1,
+        "posts": 2,
+        "reach_median": 6.0,
+        "reach_total": 12,
+        "saved_total": 0,
+        "score_median": 0.1667,
+        "shares_total": 0,
+        "total_interactions_total": 1
+      }
+    },
     "top_posts": [
       {
         "audience": "company",
-        "reach": 3,
+        "reach": 2,
         "saved": 0,
-        "score": 0.3333,
+        "score": 0.5,
         "shares": 0,
-        "theme": "onboarding",
-        "title": "異業種出身者が\n根づく職場の工夫"
-      },
-      {
-        "audience": "company",
-        "reach": 3,
-        "saved": 0,
-        "score": 0.3333,
-        "shares": 0,
-        "theme": "partnership",
-        "title": "相談前に整理したい\n求人掲載の準備"
+        "theme": "sns_recruiting",
+        "title": "求人発信前の\n準備チェック帳"
       },
       {
         "audience": "seeker",
-        "reach": 4,
+        "reach": 3,
         "saved": 0,
-        "score": 0.25,
+        "score": 0.3333,
         "shares": 0,
-        "theme": "interview_prep",
-        "title": "面接で経歴を\n話す前の整理術"
+        "theme": "first_step",
+        "title": "転職、まだ迷う夜は\n3つだけ試して"
+      },
+      {
+        "audience": "seeker",
+        "reach": 3,
+        "saved": 0,
+        "score": 0.3333,
+        "shares": 0,
+        "theme": "mindset",
+        "title": "昼職1年目の私が\n最初につまずく場面"
       }
     ],
-    "total_posts": 13
+    "total_posts": 19
   },
-  "summary": "直近56日の13投稿は、リーチ合計が求職者向け22・企業向け10と極めて小さく、保存・シェア・コメントはどちらも0件でした。反応はいいねの合計3件のみで、scoreの差は1〜2件の反応による偶然の範囲と考えられ、テーマや属性の優劣を判断できる状況ではありません。data_sufficiencyは「sufficient」ですが、実質的には母数不足のため、現時点では強い結論を避け、まずリーチ拡大と検証の継続を優先するのが妥当です。"
+  "summary": "直近56日・19投稿の総リーチは46と極めて小さく、保存・シェア・コメントはすべて0で、反応はいいね計6件のみです。このためテーマ別・投稿別の優劣は偶然の範囲を出ず、強い結論は出せません。まずはリーチの確保と、保存・シェアなど深い反応が1件でも出る形式の探索を優先すべき段階です。なお、data_sufficiencyは「sufficient」ですが、実数としては非常に小さい標本です。"
 }
