@@ -2118,6 +2118,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "夜の経験を言葉にする3つの書き出し方 まず場面を1つ思い出す そのとき何をしたか書く 行動に名前をつける 一文にまとめて残す まず1場面だけ書いてみる",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/57c375aae8ca261cd0b78ba5da3c7f3495b494e0/images/2026-11-24/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/57c375aae8ca261cd0b78ba5da3c7f3495b494e0/images/2026-11-24/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/57c375aae8ca261cd0b78ba5da3c7f3495b494e0/images/2026-11-24/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/57c375aae8ca261cd0b78ba5da3c7f3495b494e0/images/2026-11-24/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/57c375aae8ca261cd0b78ba5da3c7f3495b494e0/images/2026-11-24/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/57c375aae8ca261cd0b78ba5da3c7f3495b494e0/images/2026-11-24/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/57c375aae8ca261cd0b78ba5da3c7f3495b494e0/images/2026-11-24/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-24/slide01.jpg",
         "images/2026-11-24/slide02.jpg",
@@ -2127,6 +2136,9 @@
         "images/2026-11-24/slide06.jpg",
         "images/2026-11-24/slide07.jpg"
       ],
+      "media_id": "18401782309204050",
+      "permalink": "https://www.instagram.com/p/DgH5LPvn04r/",
+      "published_at": "2026-11-24T11:53:40+0000",
       "slides": [
         {
           "body": "強みは大きな成果より、日々の小さな場面に隠れています。昨日の仕事で「うまくいった」と感じた瞬間を1つ選び、そのときの状況をメモに書いてみましょう。",
@@ -2149,7 +2161,7 @@
           "heading": "まず1場面だけ書いてみる"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "強みを仕事の言葉にする3つの手順",
       "theme": "strengths",
       "title": "夜の経験を言葉にする\n3つの書き出し方"
