@@ -2198,6 +2198,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "面接で見たい力を行動で聞いてみる まず見たい力を決める 質問は場面で聞く 行動と工夫を確かめる 業界が違っても置き換える 評価の言葉をそろえる",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b0f81ddd2767f5b00508b02359a27af4c168354/images/2026-11-25/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b0f81ddd2767f5b00508b02359a27af4c168354/images/2026-11-25/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b0f81ddd2767f5b00508b02359a27af4c168354/images/2026-11-25/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b0f81ddd2767f5b00508b02359a27af4c168354/images/2026-11-25/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b0f81ddd2767f5b00508b02359a27af4c168354/images/2026-11-25/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b0f81ddd2767f5b00508b02359a27af4c168354/images/2026-11-25/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/3b0f81ddd2767f5b00508b02359a27af4c168354/images/2026-11-25/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-25/slide01.jpg",
         "images/2026-11-25/slide02.jpg",
@@ -2207,6 +2216,9 @@
         "images/2026-11-25/slide06.jpg",
         "images/2026-11-25/slide07.jpg"
       ],
+      "media_id": "18001451379030305",
+      "permalink": "https://www.instagram.com/p/DgKd_ZMGr9t/",
+      "published_at": "2026-11-25T11:53:50+0000",
       "slides": [
         {
           "body": "面接の前に、仕事で必要な対人スキルを2〜3個だけ書き出します。たとえば初対面で話す力、相手の話を聞く力、状況に合わせる力などです。",
@@ -2229,7 +2241,7 @@
           "heading": "評価の言葉をそろえる"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "対人スキルを見極める質問4つ",
       "theme": "potential",
       "title": "面接で見たい力を\n行動で聞いてみる"
