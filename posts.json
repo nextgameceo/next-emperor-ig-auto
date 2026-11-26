@@ -2279,6 +2279,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "昼職の初週、朝に困らない生活リズムの整え方 初日の2週間前から動く 起きたらカーテンを開ける 夜の習慣を一つだけ置く 通勤ルートを一度歩く 完璧を目指さなくていい",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/74da0cd2e15e0ba1f3b3b2611035ae96011d9d5f/images/2026-11-26/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/74da0cd2e15e0ba1f3b3b2611035ae96011d9d5f/images/2026-11-26/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/74da0cd2e15e0ba1f3b3b2611035ae96011d9d5f/images/2026-11-26/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/74da0cd2e15e0ba1f3b3b2611035ae96011d9d5f/images/2026-11-26/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/74da0cd2e15e0ba1f3b3b2611035ae96011d9d5f/images/2026-11-26/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/74da0cd2e15e0ba1f3b3b2611035ae96011d9d5f/images/2026-11-26/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/74da0cd2e15e0ba1f3b3b2611035ae96011d9d5f/images/2026-11-26/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-26/slide01.jpg",
         "images/2026-11-26/slide02.jpg",
@@ -2288,6 +2297,9 @@
         "images/2026-11-26/slide06.jpg",
         "images/2026-11-26/slide07.jpg"
       ],
+      "media_id": "18015613514990293",
+      "permalink": "https://www.instagram.com/p/DgNCtG7oCfd/",
+      "published_at": "2026-11-26T11:53:14+0000",
       "slides": [
         {
           "body": "いきなり朝型に変えようとすると、体も気持ちも疲れます。入社が決まったら、まず起きる時間を毎日30分ずつ前にずらしてみましょう。小さく動くのがコツです。",
@@ -2310,7 +2322,7 @@
           "heading": "完璧を目指さなくていい"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "朝型へ移る4つの小さな行動",
       "theme": "life_rhythm",
       "title": "昼職の初週、朝に困らない\n生活リズムの整え方"
