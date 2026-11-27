@@ -2369,6 +2369,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "求人掲載の相談まず何を伝える？ 相談できる内容を知る 採用の困りごとを書く 仕事の中身を1枚に 営業面の課題もあわせて 問い合わせフォームから",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b5a7f65050cce86d0ef06a91b3391f08dd13dd31/images/2026-11-27/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b5a7f65050cce86d0ef06a91b3391f08dd13dd31/images/2026-11-27/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b5a7f65050cce86d0ef06a91b3391f08dd13dd31/images/2026-11-27/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b5a7f65050cce86d0ef06a91b3391f08dd13dd31/images/2026-11-27/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b5a7f65050cce86d0ef06a91b3391f08dd13dd31/images/2026-11-27/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b5a7f65050cce86d0ef06a91b3391f08dd13dd31/images/2026-11-27/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/b5a7f65050cce86d0ef06a91b3391f08dd13dd31/images/2026-11-27/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-27/slide01.jpg",
         "images/2026-11-27/slide02.jpg",
@@ -2378,6 +2387,9 @@
         "images/2026-11-27/slide06.jpg",
         "images/2026-11-27/slide07.jpg"
       ],
+      "media_id": "18134011460481572",
+      "permalink": "https://www.instagram.com/p/DgPngktDcRX/",
+      "published_at": "2026-11-27T11:53:17+0000",
       "slides": [
         {
           "body": "NEXT EMPERORでは、求人掲載のほか、SNSや広告を使った求人発信、応募導線の設計などの採用支援を行っています。まず相談の範囲を知っておきましょう。",
@@ -2400,7 +2412,7 @@
           "heading": "問い合わせフォームから"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "初めて相談する企業向け4つの流れ",
       "theme": "partnership",
       "title": "求人掲載の相談\nまず何を伝える？"
