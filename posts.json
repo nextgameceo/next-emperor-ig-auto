@@ -2457,6 +2457,15 @@
         "#NEXTEMPEROR"
       ],
       "history_key": "求人票を開く前に決めておく見方 まず優先順位を決める 勤務時間は生活で見る 休日は決まり方まで 福利厚生は中身を読む 気になる点は印をつける",
+      "image_urls": [
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7fe51b182fdbee9886d4b014923690f9218db04b/images/2026-11-28/slide01.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7fe51b182fdbee9886d4b014923690f9218db04b/images/2026-11-28/slide02.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7fe51b182fdbee9886d4b014923690f9218db04b/images/2026-11-28/slide03.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7fe51b182fdbee9886d4b014923690f9218db04b/images/2026-11-28/slide04.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7fe51b182fdbee9886d4b014923690f9218db04b/images/2026-11-28/slide05.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7fe51b182fdbee9886d4b014923690f9218db04b/images/2026-11-28/slide06.jpg",
+        "https://raw.githubusercontent.com/nextgameceo/next-emperor-ig-auto/7fe51b182fdbee9886d4b014923690f9218db04b/images/2026-11-28/slide07.jpg"
+      ],
       "images": [
         "images/2026-11-28/slide01.jpg",
         "images/2026-11-28/slide02.jpg",
@@ -2466,6 +2475,9 @@
         "images/2026-11-28/slide06.jpg",
         "images/2026-11-28/slide07.jpg"
       ],
+      "media_id": "18068449439789792",
+      "permalink": "https://www.instagram.com/p/DgSMVTqDpwB/",
+      "published_at": "2026-11-28T11:53:28+0000",
       "slides": [
         {
           "body": "求人を開く前に、譲れない条件を紙に書き出します。順番がはっきりすると、読むときに迷いません。今の暮らしに合うかどうかが基準です。",
@@ -2488,7 +2500,7 @@
           "heading": "気になる点は印をつける"
         }
       ],
-      "status": "draft",
+      "status": "published",
       "subtitle": "迷わず比べる4つの確認ポイント",
       "theme": "job_check",
       "title": "求人票を開く前に\n決めておく見方"
